@@ -1,0 +1,40 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+    
+     <p id="printArray"></p>
+     <p> The duplicate element is below</p><br>
+        <script>
+          
+          var arr=[1,2,5,9,2,1,8];
+            myFunction(arr);
+                
+         arr.toString();
+  document.getElementById("printArray").innerHTML = "Array : [ "+arr+" ];";
+            function myFunction(arr) {
+               
+                for(var icount=0;icount< arr.length-1;icount++)
+                {
+            
+                    for(var jcount=icount+1;jcount< arr.length;jcount++)
+       
+                        {
+                  
+                        if(arr[icount]==arr[jcount] && icount!=jcount)
+                        {
+                 
+                        
+                       document.write(arr[icount]+" , ");
+       
+                     }
+       
+    
+             }
+      
+          }
+}
+            </script>
+    </body>
+</html>

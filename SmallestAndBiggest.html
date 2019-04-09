@@ -1,0 +1,67 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h3 id="arrayPrint"></h3>
+        <h2 id="smallElement"></h2>
+        <h2 id="bigElement"></h2>
+        <script>
+
+    var arr=[2,5,6,4,1,3,78,25,65,22,36];
+
+         smallest(arr);
+         biggest(arr);
+
+         arr.toString();
+  document.getElementById("arrayPrint").innerHTML = "Array : [ "+arr+" ];";
+            function smallest(arr)
+            {
+                var small=arr[0];
+   
+   for(var icount=0;icount<arr.length;icount++)
+
+    {
+   
+    if(arr[icount]< small)
+  
+     {
+        
+   small=arr[icount];
+
+       }
+       
+ 
+      }
+  
+      document.getElementById("smallElement").innerHTML = "The smallest number is : "+small;
+
+ }
+ function biggest(arr)
+   
+ {
+      
+  var big=arr[0];
+   
+     for(var icount=0;icount <arr.length;icount++)
+   
+     {
+         
+   if(arr[icount] > big)
+   
+         {
+        
+        big=arr[icount];
+     
+       }
+       
+    
+        }
+     
+        document.getElementById("bigElement").innerHTML ="The Biggest number is : "+ big;
+  
+  }
+            
+            </script>
+    </body>
+</html>

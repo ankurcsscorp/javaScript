@@ -1,0 +1,42 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h2 id="arrayPrint"></h2>
+        <h2>Twice repeted array </h2>
+        <script>
+
+            var arr=[2,5,6,8,1,2,5,1,9,0,4];
+            
+            
+         arr.toString();
+  document.getElementById("arrayPrint").innerHTML = "Array : [ "+arr+" ];";
+            twice(arr);
+
+
+           function twice( arr)
+{
+	
+	for (var icount = 0; icount < arr.length; icount++) {
+		var count =0;
+		for (var jcount=0;jcount < arr.length; jcount++) {
+			if(jcount< icount && arr[icount]==arr[jcount])
+			{
+				break;
+			}
+		if(arr[icount]==arr[jcount]  )
+		{
+			count++;
+		}
+		if(jcount==arr.length-1 && count==2)
+		{
+            document.write(arr[icount]+" , ");
+		}
+		
+		}
+	}
+}
+            </script>
+    </body>
+</html>
