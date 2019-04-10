@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>
+            Next smaller element
+        </title>
+    </head>
+    <body>
+        <h2 id="arr"></h2>
+        <h2>The next Smaller element is shown below</h2>
+        <script>
+            var array=[5,6,2,8,9,7,4,0,6,2];
+            array.toString;
+            document.getElementById("arr").innerHTML= "Array : [ "+array+" ];";
+            nxtSmaller(array);
+            function nxtSmaller(array)
+            {
+                var next;
+           for(var icount=0;icount<array.length;icount++)
+           {
+               next=-1;
+               for(var jcount=icount+1;jcount<array.length;jcount++)
+               {
+                if(array[icount] > array[jcount])
+                {
+                    next=array[jcount];
+                    break;
+                }
+               }
+               document.write(array[icount]+" next smaller element is : "+next + "<p>\n</p>");
+            //    document.write("\n");
+           }
+            }
+        </script>
+    </body>
+</html>
